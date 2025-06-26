@@ -1,0 +1,10 @@
+CREATE TABLE Buses (
+    BusID INT AUTO_INCREMENT PRIMARY KEY,  -- Unique ID for each bus
+    BusName VARCHAR(100) NOT NULL,          -- Name of the bus
+    FromLocation VARCHAR(100) NOT NULL,     -- Starting location
+    ToLocation VARCHAR(100) NOT NULL,       -- Destination
+    DepartureTime TIME NOT NULL,            -- Departure time
+    ArrivalTime TIME NOT NULL,              -- Arrival time
+    TravelDate DATE NOT NULL,               -- Travel date
+    Fare DECIMAL(10, 2) NOT NULL            -- Fare for the trip
+);
